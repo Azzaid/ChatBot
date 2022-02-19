@@ -1,0 +1,96 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <title>BlackLotusLair</title>
+<style>
+    .eyeWrapper {
+        position: relative;
+        width: 100%;
+        height: 200px;
+        background-color: #222f3e;
+    }
+
+    .eye {
+        width: 200px;
+        height: 200px;
+        background: #fff;
+        position: absolute;
+        top: 55%;
+        left: 50%;
+        transform: translate(-50%, -50%) rotate(45deg);
+        border-radius: 75% 0;
+        overflow: hidden;
+        cursor: pointer;
+    }
+
+    @keyframes wander {
+        from {
+            transform: translate(-95%, -5%);
+        }
+
+        to {
+            transform: translate(-5%, -90%);
+        }
+    }
+
+    .ball {
+        width: 40px;
+        height: 40px;
+        background: #222f3e;
+        border-radius: 50%;
+        border: 30px solid #0CBAA6;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transition: 0.5s;
+        transform: translate(-50%, -50%);;
+    }
+
+    .eye.wander .ball {
+        animation: 2s infinite alternate wander;
+        animation-timing-function: ease-in-out;
+    }
+
+    .shut {
+        width: 300px;
+        height: 160px;
+
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) rotate(-45deg);
+        z-index: 999;
+    }
+
+    .shut span {
+        display: block;
+        width: 100%;
+        height: 20%;
+        background: #ff6b6b;
+        border-radius: 0 0 60% 60%;
+        transition: 0.4s all;
+    }
+
+    .eye:hover > .shut span {
+        height: 100%;
+    }
+
+    .eye.close > .shut span {
+        height: 100%;
+    }
+</style>
+</head>
+<body>
+<div class="eyeWrapper">
+    <div class="eye wander" id="eye">
+        <div class="shut">
+            <span></span>
+        </div>
+        <div class="ball">
+
+        </div>
+    </div>
+</div>
+<div id="root"></div>
+</body>
+</html>

@@ -1,0 +1,54 @@
+{
+  "name": "black-lotus-chat-bot-client",
+  "version": "0.1.0",
+  "description": "Telegram bot with Express js, Firebase and React js admin panel.",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack serve",
+    "build": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Azzaid/ChatBot.git"
+  },
+  "author": "Johanas Azzaid",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Azzaid/ChatBot/issues"
+  },
+  "homepage": "https://github.com/Azzaid/ChatBot#readme",
+  "dependencies": {
+
+    "@reduxjs/toolkit": "^1.7.2",
+    "axios": "^0.25.0",
+    "file-loader": "^6.2.0",
+    "html-webpack-plugin": "^5.5.0",
+    "immer": "^9.0.12",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-redux": "^7.2.6",
+    "react-refresh-webpack-plugin": "^0.1.0",
+    "react-router-dom": "^6.2.1",
+    "redux": "^4.1.2",
+    "redux-persist": "^6.0.0",
+    "redux-thunk": "^2.4.1",
+    "redux-undo": "^1.0.1",
+    "style-loader": "^3.3.1",
+    "styled-components": "^5.3.3",
+    "webpack": "^5.65.0",
+    "webpack-cli": "^4.9.1",
+    "webpack-dev-server": "^4.7.2"
+  },
+  "devDependencies": {
+    "babel-loader": "^8.2.3",
+    "circular-dependency-plugin": "^5.2.2",
+    "css-loader": "^6.5.1",
+    "@babel/core": "^7.16.7",
+    "@babel/preset-env": "^7.16.8",
+    "@babel/preset-react": "^7.16.7",
+    "@pmmmwh/react-refresh-webpack-plugin": "^0.5.4",
+    "babel-plugin-styled-components": "^2.0.2",
+    "json-server-auth": "^2.1.0",
+    "react-refresh": "^0.11.0"
+  }
+}
