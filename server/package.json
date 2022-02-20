@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
-    "startDev": "nodemon index.js"
+    "startDev": "cross-env GOOGLE_APPLICATION_CREDENTIALS=credentials/firebaseAdminKey.json nodemon index.js"
   },
   "repository": {
     "type": "git",
